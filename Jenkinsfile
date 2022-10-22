@@ -15,6 +15,7 @@ pipeline{
             steps{
                 echo 'executing gradle'
                 withGradle() {
+                        sh 'gradle wrapper'
                         sh 'ls -al'
                 }
                
