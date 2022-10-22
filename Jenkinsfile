@@ -15,8 +15,7 @@ pipeline{
             steps{
                 echo 'executing gradle'
                 withGradle(){
-                    sh 'chmod 777 ./gradlew'
-                    sh './gradlew -v'
+                        sh 'ls -al'
                 }
                
             }
